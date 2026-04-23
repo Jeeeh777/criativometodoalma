@@ -1,0 +1,904 @@
+/* ============================================
+   MÉTODO ALMA™ — Landing Page Styles
+   Baseado nos estilos exatos da referência Divi
+   ============================================ */
+
+/* Google Fonts — Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap');
+
+/* ============================================
+   VARIÁVEIS
+   ============================================ */
+:root {
+  --verde-categoria: #03a696;
+  --bordô: #40010d;
+  --verde-botao: #7CDA24;
+  --borda-botao: #5B8500;
+  --fundo-bonus: #ddb8a0;
+  --dourado-faq: #e4bc73;
+  --titulo-faq: #d98e04;
+  --preto: #1a1a1a;
+}
+
+/* ============================================
+   RESET & BASE
+   ============================================ */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.2em;
+  color: #40010d;
+  background: #ffffff;
+  padding-top: 44px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ============================================
+   BARRA DE ALERTA (topo fixo)
+   ============================================ */
+.alert-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background: #1a1a1a;
+  color: #e4bc73;
+  text-align: center;
+  padding: 12px 20px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
+}
+
+/* ============================================
+   CONTAINER
+   ============================================ */
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ============================================
+   SEÇÕES
+   ============================================ */
+section {
+  padding: 60px 20px;
+}
+
+.bg-white {
+  background: #ffffff;
+}
+
+.bg-bonus {
+  background: #ddb8a0;
+}
+
+.bg-dark {
+  background: #1a1a1a;
+  color: #ffffff;
+}
+
+/* ============================================
+   TIPOGRAFIA
+   ============================================ */
+h1 {
+  font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
+  color: #40010d;
+  font-weight: 700;
+  line-height: 1.2em;
+}
+
+h2 {
+  font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 700;
+  line-height: 1.2em;
+}
+
+h3 {
+  font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
+}
+
+p {
+  font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.2em;
+  color: #40010d;
+  margin-bottom: 12px;
+}
+
+.titulo-verde {
+  color: #03a696;
+  font-weight: 700;
+  text-align: center;
+  font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
+}
+
+.titulo-bordô {
+  color: #40010d;
+  font-weight: 700;
+  text-align: center;
+  font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
+}
+
+/* ============================================
+   BOTÃO CTA
+   ============================================ */
+.btn-cta {
+  display: inline-block;
+  background-color: #7CDA24;
+  color: #000000 !important;
+  border: 2px solid #5B8500;
+  border-radius: 40px;
+  font-size: 40px;
+  font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 700;
+  padding: 0.3em 1em;
+  box-shadow: 0px 1px 20px 3px #000000;
+  transition: all 300ms ease 0ms;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  line-height: 1.2em;
+}
+
+.btn-cta::before,
+.btn-cta::after {
+  display: none;
+}
+
+.btn-cta:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 24px 4px #000000;
+}
+
+.btn-wrapper {
+  text-align: center;
+  margin: 30px 0;
+}
+
+/* ============================================
+   IMAGENS
+   ============================================ */
+.img-full {
+  width: 100%;
+  max-width: 980px;
+  display: block;
+  margin: 0 auto;
+}
+
+.img-circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+/* ============================================
+   SEÇÃO HERO
+   ============================================ */
+.hero-section {
+  background: #ffffff;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero-section h1 {
+  font-size: 32px;
+  color: #40010d;
+  font-weight: 700;
+  line-height: 1.2em;
+  margin-bottom: 24px;
+  max-width: 860px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-subtitle {
+  font-size: 15px;
+  font-weight: 300;
+  color: #40010d;
+  line-height: 1.4em;
+  max-width: 860px;
+  margin: 0 auto 36px;
+}
+
+/* ============================================
+   SEÇÃO BENEFÍCIOS
+   ============================================ */
+.benefits-section {
+  background: #ffffff;
+  padding: 60px 20px;
+}
+
+.benefits-section h2 {
+  color: #03a696;
+  font-size: 26px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 36px;
+  line-height: 1.2em;
+}
+
+.benefits-list {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.benefits-list li {
+  font-size: 15px;
+  font-weight: 300;
+  color: #40010d;
+  line-height: 1.6em;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(64, 1, 13, 0.08);
+}
+
+.benefits-list li:last-child {
+  border-bottom: none;
+}
+
+/* ============================================
+   SEÇÃO HISTÓRIA
+   ============================================ */
+.historia-section {
+  background: #ddb8a0;
+  padding: 60px 20px;
+  position: relative;
+}
+
+.historia-section::before {
+  content: '';
+  position: absolute;
+  top: -40px;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background: #ddb8a0;
+  clip-path: ellipse(55% 100% at 50% 100%);
+}
+
+.historia-section h2 {
+  color: #03a696;
+  font-size: 26px;
+  font-weight: 700;
+  text-align: center;
+  margin: 30px 0 16px;
+  line-height: 1.2em;
+}
+
+.historia-subtitle {
+  font-size: 16px;
+  font-weight: 300;
+  font-style: italic;
+  color: #40010d;
+  text-align: center;
+  margin-bottom: 24px;
+  line-height: 1.4em;
+}
+
+.historia-section p {
+  max-width: 860px;
+  margin: 0 auto 14px;
+  font-size: 15px;
+  font-weight: 300;
+  color: #40010d;
+  line-height: 1.4em;
+}
+
+.diferencial-box {
+  background: rgba(255, 255, 255, 0.45);
+  border-left: 4px solid #03a696;
+  border-radius: 8px;
+  padding: 24px 28px;
+  max-width: 860px;
+  margin: 30px auto 0;
+}
+
+.diferencial-box h3 {
+  color: #03a696;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  line-height: 1.2em;
+}
+
+.diferencial-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.diferencial-box ul li {
+  font-size: 15px;
+  font-weight: 300;
+  color: #40010d;
+  line-height: 1.6em;
+  padding: 6px 0;
+}
+
+/* ============================================
+   SEÇÃO CATEGORIAS
+   ============================================ */
+.categories-section {
+  background: rgba(0, 0, 0, 0);
+  background-color: #ffffff;
+  padding: 60px 20px;
+}
+
+.categories-section h2 {
+  color: #03a696;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+  line-height: 1.1em;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.category-card {
+  text-align: center;
+}
+
+.category-card h3 {
+  color: #03a696;
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 1.1em;
+  margin-top: 14px;
+  font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
+}
+
+/* ============================================
+   SEÇÃO PREÇO (fundo escuro)
+   ============================================ */
+.price-section {
+  background: #1a1a1a;
+  color: #ffffff;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.price-section h2 {
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.2em;
+}
+
+.price-section p {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.4em;
+  max-width: 860px;
+  margin: 0 auto 16px;
+}
+
+.price-section .urgencia {
+  color: #e4bc73;
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.price-section .acesso-info {
+  color: #cccccc;
+  font-size: 13px;
+  font-weight: 300;
+  margin-top: 16px;
+  line-height: 1.6em;
+}
+
+.price-section img {
+  display: block;
+  margin: 20px auto;
+}
+
+.payment-imgs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.payment-imgs img {
+  max-width: 400px;
+  width: 100%;
+}
+
+/* ============================================
+   SEÇÃO BÔNUS
+   ============================================ */
+.bonus-section {
+  background: #ddb8a0;
+  padding: 60px 20px;
+}
+
+.bonus-section h2 {
+  color: #03a696;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 50px;
+  line-height: 1.2em;
+  max-width: 860px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bonus-list {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.bonus-item {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  margin-bottom: 50px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.bonus-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.bonus-img {
+  width: 220px;
+  flex-shrink: 0;
+}
+
+.bonus-img img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.bonus-content {
+  flex: 1;
+}
+
+.bonus-number {
+  font-size: 13px;
+  font-weight: 700;
+  color: #03a696;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.bonus-content h3 {
+  color: #03a696;
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 1.1em;
+  margin-bottom: 12px;
+  font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
+}
+
+.bonus-content p {
+  color: #40010d;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.4em;
+  margin-bottom: 12px;
+}
+
+.badge-gratis {
+  display: inline-block;
+  color: #03a696;
+  font-weight: 700;
+  font-size: 16px;
+  border: 2px solid #03a696;
+  border-radius: 20px;
+  padding: 4px 16px;
+  margin-top: 8px;
+  letter-spacing: 0.5px;
+}
+
+/* ============================================
+   SEÇÃO RESUMO
+   ============================================ */
+.resumo-section {
+  background: #ffffff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.resumo-section h2 {
+  color: #03a696;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  line-height: 1.2em;
+}
+
+.resumo-list {
+  max-width: 860px;
+  margin: 30px auto;
+  text-align: left;
+}
+
+.resumo-list li {
+  font-size: 15px;
+  font-weight: 300;
+  color: #40010d;
+  line-height: 1.6em;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(64, 1, 13, 0.08);
+}
+
+.resumo-list li:last-child {
+  border-bottom: none;
+}
+
+/* ============================================
+   DEPOIMENTOS
+   ============================================ */
+.testi-section {
+  background: #ffffff;
+  padding: 60px 20px;
+}
+
+.testi-section h2 {
+  color: #03a696;
+  font-size: 26px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+  line-height: 1.2em;
+}
+
+.testi-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.testi-grid img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* ============================================
+   CERTIFICADO
+   ============================================ */
+.certificado-section {
+  background: #ffffff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.certificado-section h2 {
+  color: #03a696;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.2em;
+}
+
+.certificado-section p {
+  max-width: 860px;
+  margin: 0 auto 30px;
+  font-size: 15px;
+  font-weight: 300;
+  color: #40010d;
+  line-height: 1.4em;
+}
+
+/* ============================================
+   GARANTIA
+   ============================================ */
+.garantia-section {
+  background: #ffffff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.garantia-section h2 {
+  color: #40010d;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  line-height: 1.2em;
+}
+
+.garantia-img {
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto 24px;
+}
+
+.garantia-section p {
+  max-width: 700px;
+  margin: 0 auto 12px;
+  font-size: 15px;
+  font-weight: 300;
+  color: #40010d;
+  line-height: 1.6em;
+}
+
+/* ============================================
+   FAQ — ACCORDION CSS PURO
+   ============================================ */
+.faq-section {
+  background: #ffffff;
+  padding: 60px 20px;
+}
+
+.faq-section h2 {
+  color: #d98e04;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+  line-height: 1.2em;
+  font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
+}
+
+.faq-container {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  border: 2px solid #e4bc73;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  box-shadow: 0px 2px 18px 0px #e4bc73;
+  overflow: hidden;
+}
+
+.faq-item input[type="checkbox"] {
+  display: none;
+}
+
+.faq-item label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 24px;
+  cursor: pointer;
+  font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #d98e04;
+  background: #ffffff;
+  user-select: none;
+  line-height: 1.3em;
+  gap: 12px;
+}
+
+.faq-item label::after {
+  content: '+';
+  font-size: 28px;
+  color: #e4bc73;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+  line-height: 1;
+  font-weight: 300;
+}
+
+.faq-item input:checked + label::after {
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+  background: #fffdf8;
+  font-size: 15px;
+  font-weight: 300;
+  color: #40010d;
+  line-height: 1.6em;
+  padding: 0 24px;
+  font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
+}
+
+.faq-item input:checked ~ .faq-answer {
+  max-height: 400px;
+  padding: 18px 24px;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+footer {
+  background: #1a1a1a;
+  color: #888888;
+  text-align: center;
+  padding: 28px 20px;
+  font-size: 13px;
+  font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 300;
+  line-height: 1.6em;
+}
+
+footer p {
+  color: #888888;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+footer .footer-brand {
+  color: #e4bc73;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+/* ============================================
+   DIVISOR WAVE
+   ============================================ */
+.wave-divider {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  margin-bottom: -2px;
+}
+
+.wave-divider svg {
+  display: block;
+  width: 100%;
+}
+
+/* ============================================
+   UTILITÁRIOS
+   ============================================ */
+.text-center {
+  text-align: center;
+}
+
+.mt-20 { margin-top: 20px; }
+.mt-30 { margin-top: 30px; }
+.mb-20 { margin-bottom: 20px; }
+.mb-30 { margin-bottom: 30px; }
+
+/* ============================================
+   RESPONSIVO — TABLET (≤980px)
+   ============================================ */
+@media (max-width: 980px) {
+  .categories-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testi-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-section h1 {
+    font-size: 26px;
+  }
+}
+
+/* ============================================
+   RESPONSIVO — MOBILE (≤767px)
+   ============================================ */
+@media (max-width: 767px) {
+  body {
+    padding-top: 60px;
+    font-size: 14px;
+  }
+
+  .alert-bar {
+    font-size: 11px;
+    padding: 10px 12px;
+    line-height: 1.4em;
+  }
+
+  .btn-cta {
+    font-size: 17px !important;
+    padding: 0.5em 1.2em;
+  }
+
+  .hero-section h1 {
+    font-size: 22px;
+  }
+
+  .categories-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bonus-item,
+  .bonus-item:nth-child(even) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .bonus-img {
+    width: 180px;
+  }
+
+  .testi-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .img-circle {
+    width: 150px;
+    height: 150px;
+  }
+
+  .price-section h2 {
+    font-size: 20px;
+  }
+
+  .faq-section h2 {
+    font-size: 22px;
+  }
+
+  .faq-item label {
+    font-size: 14px;
+    padding: 14px 16px;
+  }
+
+  .faq-answer {
+    padding: 0 16px;
+  }
+
+  .faq-item input:checked ~ .faq-answer {
+    padding: 14px 16px;
+  }
+
+  section {
+    padding: 40px 16px;
+  }
+
+  .bonus-section h2,
+  .benefits-section h2,
+  .resumo-section h2,
+  .testi-section h2,
+  .certificado-section h2,
+  .garantia-section h2 {
+    font-size: 20px;
+  }
+
+  .bonus-content h3,
+  .category-card h3 {
+    font-size: 18px;
+  }
+}
