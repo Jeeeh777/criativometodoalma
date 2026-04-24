@@ -36,7 +36,7 @@ html {
 body {
   font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
   font-size: 15px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.2em;
   color: #40010d;
   background: #ffffff;
@@ -128,7 +128,7 @@ h3 {
 p {
   font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
   font-size: 15px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.2em;
   color: #40010d;
   margin-bottom: 12px;
@@ -226,7 +226,7 @@ p {
 
 .hero-subtitle {
   font-size: 15px;
-  font-weight: 300;
+  font-weight: 700;
   color: #40010d;
   line-height: 1.4em;
   max-width: 860px;
@@ -257,7 +257,7 @@ p {
 
 .benefits-list li {
   font-size: 15px;
-  font-weight: 300;
+  font-weight: 700;
   color: #40010d;
   line-height: 1.6em;
   padding: 8px 0;
@@ -299,7 +299,7 @@ p {
 
 .historia-subtitle {
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 700;
   font-style: italic;
   color: #40010d;
   text-align: center;
@@ -311,7 +311,7 @@ p {
   max-width: 860px;
   margin: 0 auto 14px;
   font-size: 15px;
-  font-weight: 300;
+  font-weight: 700;
   color: #40010d;
   line-height: 1.4em;
 }
@@ -340,7 +340,7 @@ p {
 
 .diferencial-box ul li {
   font-size: 15px;
-  font-weight: 300;
+  font-weight: 700;
   color: #40010d;
   line-height: 1.6em;
   padding: 6px 0;
@@ -406,7 +406,7 @@ p {
 .price-section p {
   color: #ffffff;
   font-size: 15px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.4em;
   max-width: 860px;
   margin: 0 auto 16px;
@@ -422,7 +422,7 @@ p {
 .price-section .acesso-info {
   color: #cccccc;
   font-size: 13px;
-  font-weight: 300;
+  font-weight: 700;
   margin-top: 16px;
   line-height: 1.6em;
 }
@@ -449,7 +449,7 @@ p {
    SEÇÃO BÔNUS
    ============================================ */
 .bonus-section {
-  background: #ddb8a0;
+  background: #ffffff;
   padding: 60px 20px;
 }
 
@@ -466,27 +466,34 @@ p {
 }
 
 .bonus-list {
-  max-width: 860px;
+  max-width: 960px;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
 }
 
 .bonus-item {
   display: flex;
-  gap: 30px;
-  align-items: flex-start;
-  margin-bottom: 50px;
-  background: rgba(255, 255, 255, 0.3);
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 0;
+  background: #ffffff;
   border-radius: 12px;
-  padding: 24px;
+  padding: 28px 20px;
+  border: 2px dashed #c0392b;
 }
 
 .bonus-item:nth-child(even) {
-  flex-direction: row-reverse;
+  flex-direction: column;
 }
 
 .bonus-img {
-  width: 220px;
+  width: 100%;
+  max-width: 260px;
   flex-shrink: 0;
+  margin-bottom: 20px;
 }
 
 .bonus-img img {
@@ -496,6 +503,7 @@ p {
 
 .bonus-content {
   flex: 1;
+  text-align: center;
 }
 
 .bonus-number {
@@ -520,7 +528,7 @@ p {
 .bonus-content p {
   color: #40010d;
   font-size: 15px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.4em;
   margin-bottom: 12px;
 }
@@ -562,7 +570,7 @@ p {
 
 .resumo-list li {
   font-size: 15px;
-  font-weight: 300;
+  font-weight: 400;
   color: #40010d;
   line-height: 1.6em;
   padding: 8px 0;
@@ -601,6 +609,8 @@ p {
 .testi-grid img {
   width: 100%;
   border-radius: 8px;
+  border: 2px solid #cccccc;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* ============================================
@@ -624,7 +634,7 @@ p {
   max-width: 860px;
   margin: 0 auto 30px;
   font-size: 15px;
-  font-weight: 300;
+  font-weight: 400;
   color: #40010d;
   line-height: 1.4em;
 }
@@ -656,7 +666,7 @@ p {
   max-width: 700px;
   margin: 0 auto 12px;
   font-size: 15px;
-  font-weight: 300;
+  font-weight: 400;
   color: #40010d;
   line-height: 1.6em;
 }
@@ -732,7 +742,7 @@ p {
   transition: max-height 0.4s ease, padding 0.3s ease;
   background: #fffdf8;
   font-size: 15px;
-  font-weight: 300;
+  font-weight: 700;
   color: #40010d;
   line-height: 1.6em;
   padding: 0 24px;
@@ -754,7 +764,7 @@ footer {
   padding: 28px 20px;
   font-size: 13px;
   font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.6em;
 }
 
@@ -810,6 +820,10 @@ footer .footer-brand {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .bonus-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .hero-section h1 {
     font-size: 26px;
   }
@@ -852,6 +866,10 @@ footer .footer-brand {
 
   .bonus-img {
     width: 180px;
+  }
+
+  .bonus-list {
+    grid-template-columns: 1fr;
   }
 
   .testi-grid {
