@@ -876,6 +876,26 @@ footer .footer-brand {
 
   .bonus-list {
     grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .bonus-item {
+    padding: 20px 16px;
+    overflow: hidden;
+  }
+
+  .bonus-img {
+    width: 160px;
+  }
+
+  .bonus-content h3 {
+    font-size: 16px;
+  }
+
+  .bonus-content p {
+    font-size: 13px;
   }
 
   .testi-grid {
